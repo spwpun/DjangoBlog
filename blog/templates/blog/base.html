@@ -2,8 +2,8 @@
 {% load static %}
 {% load staticfiles %}
 {% load blog_tags %}
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head >
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{% static 'blog/img/favicon.ico' %}" >
@@ -28,8 +28,8 @@
 	<script src="{% static 'blog/js/pace.min.js' %}" ></script>
 	<script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
 </head>
-<body>
-<div class="container" background="{% static 'blog/img/background.jpg' %}">
+<body background="{% static 'blog/img/background.jpg' %}" style="background-repeat: no-repeat;background-position: center;background-size: cover;">
+<div class="container">
     <header id="site-header" >
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
@@ -136,7 +136,6 @@
         </div>
     </div>
 </div>
-<img src="{% static 'blog/img/background.jpg' %}" width="544" height="213" />
 <footer id="site-footer">
     <div class="container">
         <div class="row">
