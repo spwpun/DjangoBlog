@@ -3,7 +3,7 @@
 {% load staticfiles %}
 {% load blog_tags %}
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head >
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{% static 'blog/img/favicon.ico' %}" >
@@ -29,8 +29,8 @@
 	<script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
 </head>
 <body>
-<div class="container">
-    <header id="site-header">
+<div class="container" background="{% static 'blog/img/background.jpg' %}">
+    <header id="site-header" >
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
@@ -151,10 +151,10 @@
     <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
     <nav>
         <ul>
-            <li><a href="{% url 'blog:index' %}" ><text size=3 color="#7b68ee">首页</text></a></li>
-            <li><a href="https://blog.csdn.net/lplp9822" ><text size=3 color="#7b68ee">博客</text></a></li>
-            <li><a href="http://spwpun.info/article/6" ><text size=3 color="#7b68ee">关于</text></a></li>
-            <li><a href="http://spwpun.info/article/8" ><text size=3 color="#7b68ee">联系</text></a></li>
+            <li><a href="{% url 'blog:index' %}" ><font size=3 color="#7b68ee">首页</font></a></li>
+            <li><a href="https://blog.csdn.net/lplp9822" ><font size=3 color="#7b68ee">博客</font></a></li>
+            <li><a href="http://spwpun.info/article/6" ><font size=3 color="#7b68ee">关于</font></a></li>
+            <li><a href="http://spwpun.info/article/8" ><font size=3 color="#7b68ee">联系</font></a></li>
         </ul>
     </nav>
 </div>
